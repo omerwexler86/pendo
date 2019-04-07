@@ -1,20 +1,24 @@
 <head>
-
+<script
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+      crossorigin="anonymous"></script>
 
 <script>
-function test(){
-POST /api/v1/create HTTP/1.1
-Host: dummy.restapiexample.com
-Content-Type: application/json
-cache-control: no-cache
-Postman-Token: 1bd10819-984e-4548-ac84-cc5c147b5fd6
-{
-    name: "testomerwex3",
-    salary: "123",
-    age: "23",
-    id: "71999"
-}------WebKitFormBoundary7MA4YWxkTrZu0gW--
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://dummy.restapiexample.com/api/v1/employee/71999?=",
+  "method": "GET",
+  "headers": {
+    "cache-control": "no-cache",
+    "Postman-Token": "f6f9c88e-704d-4abc-9d5c-8e811639022b"
+  }
 }
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
 </script>
 
 
