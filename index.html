@@ -42,10 +42,9 @@
 </script>
 <script type="text/javascript">
 
-function saab(selectObject){
-  var value = selectObject.value;  
-  console.log(value);
-  pendo.track(value, null);
+function sendEvent(){
+  
+  pendo.track('btnClick', null);
 }
 </script>
 <!-- Start of Async Drift Code -->
@@ -87,7 +86,7 @@ drift.load('cn998c44h2tf');
 <a href = 'https://omerwexler86.github.io/pendo/README'>Click me 2</a>
 <button class="your-button-class" onclick="window.location.href = 'https://omerwexler86.github.io/pendo/README';">Click Here</button>
 
-<button>Click me 3</button>
+<button onclick="sendEvent()">Click me 3</button>
 <button>Click me 4</button>
 <button>Click me 5</button>
 <br><br><br><br>
