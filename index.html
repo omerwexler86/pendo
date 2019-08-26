@@ -40,6 +40,14 @@
        
 })('5b78922f-21c6-4607-6a35-2dbe203c2c7b');
 </script>
+
+<script type="text/javascript">
+
+function showGuide(e){
+  pendo.showGuideById(e.target.value)
+}
+</script>
+
 <script type="text/javascript">
 
 function sendEvent(){
@@ -103,11 +111,11 @@ drift.load('cn998c44h2tf');
 </form> 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<select onchange="saab(this)">
-  <option id='o1' value="volvo">Volvo</option>
-  <option id='o2' value="saab" onselect='pendo.track('Omer',null)'>Saab</option>
-  <option id='o3' value="mercedes" onclick="pendo.showGuideById('VX7i8huNQC9pzWnI0NO9O0bYfh8')">Mercedes</option>
-  <option id='o4' value="audi">Audi</option>
+<select onchange="showGuide(this)">
+  <option id='o1' value="volvo" data-guide-id="VX7i8huNQC9pzWnI0NO9O0bYfh8">Volvo</option>
+  <option id='o2' value="saab" data-guide-id="VX7i8huNQC9pzWnI0NO9O0bYfh8">Saab</option>
+  <option id='o3' value="mercedes" data-guide-id="VX7i8huNQC9pzWnI0NO9O0bYfh8">Mercedes</option>
+  <option id='o4' value="audi" data-guide-id="VX7i8huNQC9pzWnI0NO9O0bYfh8">Audi</option>
 </select>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
