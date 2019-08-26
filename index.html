@@ -43,11 +43,17 @@
 
 <script type="text/javascript">
 
+
+
 function showGuide(e){
   pendo.showGuideById(e.target.value)
 }
 
-document.getElementById('carSelect').addEventListener('change', showGuide)
+function domReady() {
+  document.getElementById('carSelect').addEventListener('change', showGuide)  
+}
+
+
 </script>
 
 <script type="text/javascript">
@@ -87,7 +93,7 @@ drift.load('cn998c44h2tf');
 <!-- End of Async Drift Code -->
 
 </head>
-<body>
+<body onload="domReady">
 <h1> Test site</h1>
 
 <h2>HTML Buttons</h2>
