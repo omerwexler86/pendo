@@ -15,7 +15,7 @@
             visitor: {
                 id:              'omer123583',
                 town:             "Rishon LeZion", 
-               
+
 
                    // Required if user is logged in
                  email:        'omer@pendo.io',
@@ -94,6 +94,15 @@ drift.load('cn998c44h2tf');
 <!-- End of Async Drift Code -->
 
 </head>
+<script>
+var targetNode = document.getElementById('pendo-image-badge-66ce8219');
+var observer = new MutationObserver(function(){
+    if(targetNode.style.display != 'none'){
+        document.getElementById('pendo-image-badge-90075d35').style.display = 'none';
+    }
+});
+observer.observe(targetNode, { attributes: true, childList: true });
+</script>
 <body onload="domReady">
 <h1> Test site</h1>
 
@@ -107,6 +116,7 @@ drift.load('cn998c44h2tf');
 <button>Click me 4</button>
 <button>Click me 5</button>
 <br><br><br><br>
+
 <h2>HTML Forms</h2>
 
 <form action="/action_page.php">
