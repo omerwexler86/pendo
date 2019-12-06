@@ -96,9 +96,10 @@ drift.load('cn998c44h2tf');
 </head>
 <script>
 var targetNode = document.getElementById('pendo-image-badge-66ce8219');
+var customBadgeNew = document.getElementById('pendo-image-badge-90075d35')
 var observer = new MutationObserver(function(){
     if(targetNode.style.display != 'none'){
-        document.getElementById('pendo-image-badge-90075d35').style.display = 'none';
+        customBadgeNew.style.display = 'none';
     }
 });
 observer.observe(targetNode, { attributes: true, childList: true });
