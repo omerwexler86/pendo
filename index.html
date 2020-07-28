@@ -209,6 +209,15 @@ document._p
 
 <style>
 /* Popup container - can be anything you want */
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
