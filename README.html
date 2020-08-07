@@ -13,8 +13,18 @@
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
             visitor: {
-                id:              '1243113',
+                id:              '2223314',
                 town:             "Rishon LeZion", 
+                company_uuid: "fc35e2a2-c128-4223-a95e-6a99707a4732", 
+                test: "omerTest",
+                firstName: "Omer",
+                lastName: "Wexler",
+                screenSize: window.screen.width,
+                versionTestFloat: 5.32,
+                versionTestText: "2.332222",
+
+                pageURL: window.location.href,
+
 
                    // Required if user is logged in
                  email:        'omer@pendo.io',
@@ -26,8 +36,9 @@
             },
 
             account: {
-                id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
-                // name:         // Optional
+                id:           'a1221132', // Highly recommended
+                name:         'account2',
+                countryCode: "Test 1",
                 // planLevel:    // Optional
                 // planPrice:    // Optional
                 // creationDate: // Optional
@@ -35,6 +46,7 @@
                 // You can add any additional account level key-values here,
                 // as long as it's not one of the above reserved names.
             }
+             
            
 });
        
@@ -49,3 +61,6 @@
 <button>Click me 2</button>
 <button>Click me 3</button>
 <button>Click me now</button>
+
+
+<button class='button1' onclick="showGuideById(id)"><img src="https://pendo-static-5153162554769408.storage.googleapis.com/vDrDj9gCWtqUlYgCX3TWc7eN-WU/guide-media-464efd17-af94-406d-ac2a-90a4706d9186"></button>
