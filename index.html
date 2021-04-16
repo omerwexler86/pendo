@@ -98,7 +98,7 @@ function sendEvent(){
 });
 }
 </script>
-
+git
 
 </head>
 <script>
@@ -124,7 +124,18 @@ observer.observe(targetNode, { attributes: true, childList: true });
 <button onclick="pendo.track("btnClick", {omer:'omer', account_id:'accountTrack'
 
 });">Click me 4</button>
-<button>Click me 5</button>
+<button onclick="pendo.initialize({
+    visitor: {
+        id: "dev1234",
+        name: "Neo",
+        email: "neo@thematrix.io",
+        role: "godlike"
+    },
+    account: {
+        id: "PUT_ACCOUNT_ID_HERE",
+        name: "CorpSchmorp"
+    }
+});">Click me 5</button>
 <br><br>
 
 <div id="hiddenDiv"style="visibility: hidden;">
