@@ -78,9 +78,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <script type="text/javascript">
 
 pendo.track("number", {
-  PROPERTY1: "PROPERTY1VALUE",
-  PROPERTY2: "PROPERTY2VALUE",
-  PROPERTYN: "PROPERTYNVALUE",
+  likes: document.getElementById("numberToSend").textContent
+  
   
 });
 
@@ -122,7 +121,7 @@ observer.observe(targetNode, { attributes: true, childList: true });
 <body onload="domReady">
 <h1 class="siteTitle"> Test site</h1>
 <div id="numberToSend">
-  <p>5</p>
+  5
   </div>
 
 <h2>HTML Buttons</h2>
