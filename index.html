@@ -38,6 +38,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   logins: 5
 });
 </script>
+<script type="text/javascript">
+  analytics.page("Pendo","Home");
+  function segmentClick(){
+    analytics.track("User Registered", {
+  plan: "Pro Annual",
+  accountType: "Facebook"
+});
+  }
+
+</script>
 
 <script>
 (function(apiKey){
@@ -152,7 +162,7 @@ observer.observe(targetNode, { attributes: true, childList: true });
 
 <h2>HTML Buttons</h2>
 <p>HTML buttons are defined with the button tag:</p>
-<button id='clickMe1'>Click me 1</button>
+<button id='clickMe1' onclick="segmentClick()">Click me 1</button>
 <a href = 'https://omerwexler86.github.io/pendo/README'>Click me 2</a>
 <!--<button class="your-button-class" >Click Here</button>-->
 
