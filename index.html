@@ -152,16 +152,7 @@ function sendEvent(){
 git
 
 </head>
-<script>
-var targetNode = document.getElementById('_pendo-badge_pZ7nQHUpI87OZeRdoA6EnrBA3qM');
-var customBadgeNew = document.getElementById('_pendo-badge_xhlqwy4iy9-_Jkp0EtgTn33nOL0')
-var observer = new MutationObserver(function(){
-    if(targetNode.style.display != 'none'){
-        customBadgeNew.style.display = 'none';
-    }
-});
-observer.observe(targetNode, { attributes: true, childList: true });
-</script>
+
 <body onload="domReady">
 <h1 class="siteTitle"> Test site</h1>
 <div id="numberToSend">
